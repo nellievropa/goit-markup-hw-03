@@ -1,3 +1,13 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --brand-color: #2196f3;
   --text-color-main: #212121;
@@ -14,6 +24,8 @@ body {
   color: var(--text-color-main);
 }
 ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
  
 }
@@ -21,7 +33,13 @@ ul {
 /* ul {
     list-style: none;
 } */
-
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
 .logo {
   text-decoration: none;
   color: var(--black);
@@ -72,18 +90,28 @@ ul {
 /* Hero */
 .hero-section {
   background-color: var(--background-color);
+  text-align: center;
+  
+  
+ 
+  /* text-align: center; */
+  /* выставит все елементы по центру */
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
+ 
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  
 }
 /* Button */
 .button {
+  padding: 10px 32px;
   background-color: var(--brand-color);
   color: var(--white);
   font-weight: 700;
@@ -93,6 +121,11 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+/* min-width: 216; можно задавать, чтобы тект не вылазил за границы кнопок */
+
+
 }
 
 .button:hover,
@@ -104,7 +137,11 @@ ul {
 /* Sections */
 
 /* Our peculiarities */
+.pecul-section {
+  
+}
 .visually-hidden {
+  
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -116,9 +153,16 @@ ul {
   clip-path: inset(50%);
   margin: -1px;
 }
-.pecul-section .title {
+.title.item  {
+  padding-top: 94px;
+}
+ul .list {
+  margin-top: 0;
+  
 }
 .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -126,6 +170,8 @@ ul {
   text-transform: uppercase;
 }
 .descr {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--text-color-gray);
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -133,6 +179,8 @@ ul {
 }
 /* what we do */
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -140,10 +188,18 @@ ul {
   letter-spacing: 0.03em;
 }
 /* Our team */
+.section-title.team {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+
 .team {
   background-color: var(--background-color-light);
 }
 .title-team {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -192,6 +248,7 @@ ul {
 
 /* Portpholio */
 .button-secondary {
+  display: inline-block;
   background-color: var(--background-color-light);
   color: var(--text-color-main);
   text-decoration: none;
@@ -201,6 +258,13 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+
+  /* border: 2px solid transparent; - прозрачная рамка если нужно */
+
 }
 .button-secondary:hover,
 .button-secondary:focus {
