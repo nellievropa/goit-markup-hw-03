@@ -1,0 +1,230 @@
+:root {
+  --brand-color: #2196f3;
+  --text-color-main: #212121;
+  --text-color-gray: #757575;
+  --black: #000000;
+  --white: #ffffff;
+  --background-color: #2f303a;
+  --background-color-light: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+  color: var(--text-color-main);
+}
+ul {
+  list-style: none;
+ 
+}
+/* важно УБРАТЬ ТОЧКИ */
+/* ul {
+    list-style: none;
+} */
+
+.logo {
+  text-decoration: none;
+  color: var(--black);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+.logo-brand {
+  color: var(--brand-color);
+}
+.logo:hover {
+  color: var(--text-color-gray);
+}
+.logo-brand:hover {
+  color: var(--text-color-gray);
+}
+/* Site nav */
+.site-nav .link {
+  text-decoration: none;
+  color: var(--text-color-main);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+.site-nav .link.current {
+  color: var(--brand-color);
+}
+.contact-nav .link {
+  text-decoration: none;
+  color: var(--text-color-gray);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: #2196f3;
+}
+
+/* Hero */
+.hero-section {
+  background-color: var(--background-color);
+}
+.hero-title {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Button */
+.button {
+  background-color: var(--brand-color);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--white);
+  color: var(--brand-color);
+}
+
+/* Sections */
+
+/* Our peculiarities */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.pecul-section .title {
+}
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.descr {
+  color: var(--text-color-gray);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+/* what we do */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Our team */
+.team {
+  background-color: var(--background-color-light);
+}
+.title-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.descr-team {
+  color: var(--text-color-gray);
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Footer */
+.footer {
+  background-color: var(--background-color);
+}
+.logo-white {
+  color: var(--white);
+}
+.logo-white:hover {
+    color: var(--text-color-gray);
+  }
+.section-title {
+  color: var(--text-color-main);
+}
+.address {
+  color: var(--white);
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.link-foot {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.contact-nav .link-foot:hover,
+.contact-nav .link-foot:focus {
+  color: #2196f3;
+}
+
+/* Portpholio */
+.button-secondary {
+  background-color: var(--background-color-light);
+  color: var(--text-color-main);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: var(--brand-color);
+  color: var(--white);
+}
+/* Our work */
+
+a {
+text-decoration: none;
+}
+.title-work {
+ 
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+ color: var(--text-color-main);
+
+}
+.descr-work {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--text-color-gray);
+  
+}
