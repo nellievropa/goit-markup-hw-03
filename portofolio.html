@@ -24,31 +24,37 @@
   <body>
     <!-- Header -->
     <header class="page-header">
-      <nav>
-        <a href="./index.html" class="logo"
-          ><span class="logo-brand">Web</span>Studio</a
-        >
+      <div class="container no-padding">
+        <nav>
+          <a href="./index.html" class="logo"><span class="logo-brand">Web</span>Studio</a>
 
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Студія</a></li>
-          <li><a href="#" class="link current">Портфоліо</a></li>
-          <li><a href="#" class="link">Контакти</a></li>
+          <ul class="site-nav">
+            <li><a href="./index.html" class="link">Студія</a></li>
+            <li><a href="./portofolio.html" class="link current">Портфоліо</a></li>
+            <li><a href="#" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container no-padding">
+        <ul class="contact-nav">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contact-nav list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <!-- main -->
     <main>
       <h1 class="visually-hidden">Portpholio page</h1>
       <section>
+       
         <h2 class="visually-hidden">Site navigation</h2>
+        <div class="container no-padding">
         <ul class="site-nav list">
           <li><button type="button" class="button-secondary">Усі</button></li>
           <li>
@@ -64,143 +70,148 @@
             <button type="button" class="button-secondary">Маркетинг</button>
           </li>
         </ul>
+       </div>
 
-        <ul>
-          <li>
-            <a href="">
-              <img
-                src="./images/portfolio/technokriak.jpg"
-                width="370"
-                height="294"
-                alt="Сторінка сайту відкрита на ноутбуці з фото команди"
-              />
-              <h3 class="title-work">Технокряк</h3>
-              <p class="descr-work">Веб-сайт</p></a
-            >
-          </li>
-
-          <li>
-            <a href="">
-              <img
-                src="./images/portfolio/new-orlean.jpg"
-                width="370"
-                height="294"
-                alt="Два баскетболісти з мячем"
-              />
-              <h3 class="title-work">Постер New Orlean vs Golden Star</h3>
-              <p class="descr-work">Дизайн</p></a
-            >
-          </li>
-
-          <li>
-            <a href=""
-              ><img
-                src="./images/portfolio/seafood.jpg"
-                width="370"
-                height="294"
-                alt="Макет логотипу ресторану Сиафуд"
-              />
-              <h3 class="title-work">Ресторан Seafood</h3>
-              <p class="descr-work">Додаток</p></a
-            >
-          </li>
-
-          <li>
-            <a href="">
-              <img
-                src="./images/portfolio/prime.jpg"
-                width="370"
-                height="294"
-                alt="Фото навушників чорних"
-              />
-              <h3 class="title-work">Проєкт Prime</h3>
-              <p class="descr-work">Маркетинг</p></a
-            >
-          </li>
-          <li>
-            <a href="">
-              <img
-                src="./images/portfolio/boxes.jpg"
-                width="370"
-                height="294"
-                alt="Фото двох коробок з лого проекту"
-              />
-              <h3 class="title-work">Проєкт Boxes</h3>
-              <p class="descr-work">Додаток</p></a
-            >
-          </li>
-          <li>
-            <a href="">
-              <img
-                src="./images/portfolio/inspiration-has-noborder.jpg"
-                width="370"
-                height="294"
-                alt="Монітор з головною сторінкою сайту"
-              />
-              <h3 class="title-work">Inspiration has no Borders</h3>
-              <p class="descr-work">Веб-сайт</p></a
-            >
-          </li>
-          <li>
-            <a href="">
-              <img
-                src="./images/portfolio/limited-editions.jpg"
-                width="370"
-                height="294"
-                alt="Розгорнуте видання албому проекту"
-              />
-              <h3 class="title-work">Видання Limited Edition</h3>
-              <p class="descr-work">Дизайн</p></a
-            >
-          </li>
-          <li>
-            <a href="">
-              <img
-                src="./images/portfolio/lab.jpg"
-                width="370"
-                height="294"
-                alt="Розроблений макет лейби бренду"
-              />
-              <h3 class="title-work">Проєкт LAB</h3>
-              <p class="descr-work">Маркетинг</p></a
-            >
-          </li>
-
-          <li>
-            <a href=""
-              ><img
-                src="./images/portfolio/growing-business.jpg"
-                width="370"
-                height="294"
-                alt="На екрані ноутбука головна сторінка додатку"
-              />
-              <h3 class="title-work">Growing Business</h3>
-              <p class="descr-work">Додаток</p></a
-            >
-          </li>
-        </ul>
+        <div class="container">
+          <ul>
+            <li class="work-item">
+              <a href="">
+                <img
+                  src="./images/portfolio/technokriak.jpg"
+                  width="370"
+                  height="294"
+                  alt="Сторінка сайту відкрита на ноутбуці з фото команди"
+                />
+                <h3 class="title-work">Технокряк</h3>
+                <p class="descr-work">Веб-сайт</p></a
+              >
+            </li>
+  
+            <li class="work-item">
+              <a href="">
+                <img
+                  src="./images/portfolio/new-orlean.jpg"
+                  width="370"
+                  height="294"
+                  alt="Два баскетболісти з мячем"
+                />
+                <h3 class="title-work">Постер New Orlean vs Golden Star</h3>
+                <p class="descr-work">Дизайн</p></a
+              >
+            </li>
+  
+            <li class="work-item">
+              <a href=""
+                ><img
+                  src="./images/portfolio/seafood.jpg"
+                  width="370"
+                  height="294"
+                  alt="Макет логотипу ресторану Сиафуд"
+                />
+                <h3 class="title-work">Ресторан Seafood</h3>
+                <p class="descr-work">Додаток</p></a
+              >
+            </li>
+  
+            <li class="work-item">
+              <a href="">
+                <img
+                  src="./images/portfolio/prime.jpg"
+                  width="370"
+                  height="294"
+                  alt="Фото навушників чорних"
+                />
+                <h3 class="title-work">Проєкт Prime</h3>
+                <p class="descr-work">Маркетинг</p></a
+              >
+            </li>
+            <li class="work-item">
+              <a href="">
+                <img
+                  src="./images/portfolio/boxes.jpg"
+                  width="370"
+                  height="294"
+                  alt="Фото двох коробок з лого проекту"
+                />
+                <h3 class="title-work">Проєкт Boxes</h3>
+                <p class="descr-work">Додаток</p></a
+              >
+            </li>
+            <li class="work-item">
+              <a href="">
+                <img
+                  src="./images/portfolio/inspiration-has-noborder.jpg"
+                  width="370"
+                  height="294"
+                  alt="Монітор з головною сторінкою сайту"
+                />
+                <h3 class="title-work">Inspiration has no Borders</h3>
+                <p class="descr-work">Веб-сайт</p></a
+              >
+            </li>
+            <li class="work-item">
+              <a href="">
+                <img
+                  src="./images/portfolio/limited-editions.jpg"
+                  width="370"
+                  height="294"
+                  alt="Розгорнуте видання албому проекту"
+                />
+                <h3 class="title-work">Видання Limited Edition</h3>
+                <p class="descr-work">Дизайн</p></a
+              >
+            </li>
+            <li class="work-item">
+              <a href="">
+                <img
+                  src="./images/portfolio/lab.jpg"
+                  width="370"
+                  height="294"
+                  alt="Розроблений макет лейби бренду"
+                />
+                <h3 class="title-work">Проєкт LAB</h3>
+                <p class="descr-work">Маркетинг</p></a
+              >
+            </li>
+  
+            <li class="work-item">
+              <a href=""
+                ><img
+                  src="./images/portfolio/growing-business.jpg"
+                  width="370"
+                  height="294"
+                  alt="На екрані ноутбука головна сторінка додатку"
+                />
+                <h3 class="title-work">Growing Business</h3>
+                <p class="descr-work">Додаток</p></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-      <a href="./index.html" class="logo"
+      <div class="container footer">
+        <a href="./index.html" class="logo"
         ><span class="logo-brand">Web</span
         ><span class="logo-white">Studio</span></a
       >
       <address>
-        <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
+        <p class="address no-padding">м. Київ, пр-т Лесі Українки, 26</p>
       </address>
       <ul class="contact-nav">
         <li>
-          <a href="mailto:info@example.com" class="link-foot"
-            >info@example.com</a
+          <a href="mailto:info@devstudio.com" class="link-foot"
+            >info@devstudio.com</a
           >
         </li>
         <li>
           <a href="tel:+380961111111" class="link-foot">+38 096 111 11 11</a>
         </li>
       </ul>
+       </div>
     </footer>
   </body>
 </html>

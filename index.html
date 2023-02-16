@@ -25,18 +25,18 @@
     <!-- Header -->
 
     <header class="page-header">
-      <div class="container">
+      <div class="container no-padding">
         <nav>
           <a href="#" class="logo"><span class="logo-brand">Web</span>Studio</a>
 
-          <ul class="site-nav list">
+          <ul class="site-nav">
             <li><a href="#" class="link current">Студія</a></li>
             <li><a href="./portofolio.html" class="link">Портфоліо</a></li>
             <li><a href="#" class="link">Контакти</a></li>
           </ul>
         </nav>
       </div>
-      <div class="container">
+      <div class="container no-padding">
         <ul class="contact-nav">
           <li>
             <a href="mailto:info@devstudio.com" class="link"
@@ -52,12 +52,14 @@
     <!-- main -->
     <main>
       <!-- Hero section-->
-      <section class="hero-section">
+      <section class="hero-section no-padding">
+       <div class="container">
         <h1 class="hero-title">
           Ефективні рішення для <br />
           вашого бізнесу
         </h1>
         <button type="button" class="button">Замовити послугу</button>
+       </div>
       </section>
       <!-- Our peculiarities -->
 
@@ -130,7 +132,7 @@
        <div class="container">
         <h2 class="section-title team">Наша команда</h2>
         <ul>
-          <li>
+          <li class="card-team">
             <img
               src="./images/Team/IgorDem.jpg"
               width="270"
@@ -139,7 +141,7 @@
             <h3 class="title-team">Ігор Дем'яненко</h3>
             <p class="descr-team" lang="en">Product Designer</p>
           </li>
-          <li>
+          <li class="card-team">
             <img
               src="./images/Team/OlhaRep.jpg"
               width="270"
@@ -148,7 +150,7 @@
             <h3 class="title-team">Ольга Рєпіна</h3>
             <p class="descr-team" lang="en">Frontend Developer</p>
           </li>
-          <li>
+          <li class="card-team">
             <img
               src="./images/Team/MycolaTar.jpg"
               width="270"
@@ -157,7 +159,7 @@
             <h3 class="title-team">Микола Тарасов</h3>
             <p class="descr-team" lang="en">Marketing</p>
           </li>
-          <li>
+          <li class="card-team">
             <img
               src="./images/Team/MychailoErm.jpg"
               width="270"
@@ -172,23 +174,25 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
+     <div class="container footer">
       <a href="./index.html" class="logo"
-        ><span class="logo-brand">Web</span
-        ><span class="logo-white">Studio</span></a
-      >
-      <address>
-        <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
-      </address>
-      <ul class="contact-nav">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link-foot"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="link-foot">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      ><span class="logo-brand">Web</span
+      ><span class="logo-white">Studio</span></a
+    >
+    <address>
+      <p class="address no-padding">м. Київ, пр-т Лесі Українки, 26</p>
+    </address>
+    <ul class="contact-nav">
+      <li>
+        <a href="mailto:info@devstudio.com" class="link-foot"
+          >info@devstudio.com</a
+        >
+      </li>
+      <li>
+        <a href="tel:+380961111111" class="link-foot">+38 096 111 11 11</a>
+      </li>
+    </ul>
+     </div>
     </footer>
   </body>
 </html>
