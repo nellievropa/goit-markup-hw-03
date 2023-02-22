@@ -354,15 +354,14 @@ padding-bottom: 0;
   /* margin-right: 30px;
 margin-bottom: 30px; */
   padding: 0;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 .card-team:nth-child(4n) {
   margin-right: 0;
 }
 
 .title-team {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -370,8 +369,8 @@ margin-bottom: 30px; */
   letter-spacing: 0.03em;
 }
 .descr-team {
-  padding-top: 0;
-  padding-bottom: 30px;
+  /* padding-top: 0;
+  padding-bottom: 0; - їх у параграфа немає*/
   margin: 0;
   margin-bottom: 0;
   color: var(--text-color-gray);
@@ -381,13 +380,23 @@ margin-bottom: 30px; */
   letter-spacing: 0.03em;
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
+
+.card-team-descr {
+  display: block;
+padding-top: 30px;
+padding-bottom: 30px;
+
+list-style: none;
+}
 /* Footer */
-.footer.container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-color);
 }
-
+.footer .container {
+  padding-bottom: 0;
+}
 .logo-white {
   color: var(--white);
 }
