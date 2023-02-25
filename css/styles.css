@@ -39,7 +39,7 @@ p {
   padding-right: 15px;
   margin: 0 auto;
   /* outline: 2px solid tomato; */
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
 }
 .section-title {
   color: var(--text-color-main);
@@ -327,11 +327,10 @@ padding-bottom: 0;
 }
 
 /* Our team */
-.section-team .container {
+.section-team  {
   /* display: flex; */
   padding-top: 94px;
   padding-bottom: 94px;
-
   background-color: var(--background-color-light);
 }
 
@@ -434,7 +433,7 @@ list-style: none;
 .footer-nav .link:focus {
   color: var(--brand-color);
 }
-.footer-nav .item {
+.footer-nav .item:not(:first-child) {
   margin-top: 12px;
 }
 
@@ -554,7 +553,7 @@ a {
   color: var(--text-color-gray);
 }
 .work-item-descr {
-  display: block;
+  /* display: block; */
 padding: 20px 24px;
 border-bottom: 1px solid var(--border-color);
 border-left:  1px solid var(--border-color);
